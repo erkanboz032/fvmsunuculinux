@@ -19,7 +19,7 @@ case $islemler in
 	rm -rf /home/sunucu
 	cd /root
 	wget http://fivem.erkanboz.com.tr/fvminstaller.sh
-	chmod -R 777 /root/fvminstaller
+	chmod -R 777 /root/fvminstaller.sh
 	rm -rf /root/menu
 	echo "Başarıyla Silindi ve installer geri yüklendi"
 ;;
