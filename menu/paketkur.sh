@@ -20,7 +20,9 @@ case $islemler in
     clear
     echo "Sunucu Dosyaları Dizini Oluşturuluyor..."
 	sleep 2
-	mkdir /home/sunucu/server && cd /home/sunucu/server
+	rm -rf /home/sunucu/server
+	mkdir /home/sunucu/server
+	cd /home/sunucu/server
 	clear
 	echo "Sıkıştırılmış Sunucu Dosyaları İndiriliyor..."
 	sleep 2
@@ -37,15 +39,17 @@ case $islemler in
     clear
     echo "Sunucu Dosyaları Dizini Oluşturuluyor..."
 	sleep 2
-	mkdir ~/sunucu/server && cd ~/sunucu/server
+	rm -rf /home/sunucu/server
+	mkdir /home/sunucu/server
+	cd /home/sunucu/server
 	clear
 	echo "Sıkıştırılmış Sunucu Dosyaları İndiriliyor..."
 	sleep 2
 	wget https://github.com/citizenfx/cfx-server-data/archive/master.zip
-	unzip master.zip
+	unzip master.zip -y
 	rm -f master.zip
 	clear
-	echo "Başarıyla Silindi"
+	echo "Başarıyla Kuruldu"
 	sleep 2
 	sh /root/menu/skur.sh
 ;;
@@ -54,15 +58,17 @@ case $islemler in
     clear
     echo "Sunucu Dosyaları Dizini Oluşturuluyor..."
 	sleep 2
-	mkdir ~/sunucu/server && cd ~/sunucu/server
+	rm -rf /home/sunucu/server
+	mkdir /home/sunucu/server
+	cd /home/sunucu/server
 	clear
 	echo "Sıkıştırılmış Sunucu Dosyaları İndiriliyor..."
 	sleep 2
 	wget https://github.com/citizenfx/cfx-server-data/archive/master.zip
-	unzip master.zip
+	unzip master.zip -y
 	rm -f master.zip
 	clear
-	echo "Başarıyla Silindi"
+	echo "Başarıyla Kuruldu"
 	sleep 2
 	sh /root/menu/skur.sh
 ;;
