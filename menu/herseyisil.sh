@@ -21,6 +21,7 @@ case $islemler in
 	wget http://fivem.erkanboz.com.tr/fvminstaller.sh
 	chmod -R 777 /root/fvminstaller.sh
 	rm -rf /root/menu
+	cd /root
 	echo "Başarıyla Silindi ve installer geri yüklendi"
 ;;
 
