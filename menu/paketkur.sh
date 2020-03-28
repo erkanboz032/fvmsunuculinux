@@ -25,7 +25,7 @@ case $islemler in
 	echo "Sıkıştırılmış Sunucu Dosyaları İndiriliyor..."
 	sleep 2
 	wget https://github.com/citizenfx/cfx-server-data/archive/master.zip
-	unzip master.zip
+	unzip master.zip -y
 	rm -f master.zip
 	clear
 	echo "Başarıyla Kuruldu"
